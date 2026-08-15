@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>制作意図｜記事コンテンツ型LP サンプル</title>
+<style>
+  :root {
+    --ink: #23211f;
+    --sub: #6b6660;
+    --line: #e4e0d8;
+    --bg: #faf8f4;
+    --card: #ffffff;
+    --accent: #3f7d5a;
+    --orange: #e0622c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 36px 20px 64px; }
+  .back { font-size: 13px; color: var(--accent); text-decoration: none; }
+  .back:hover { text-decoration: underline; }
+  header { border-bottom: 1px solid var(--line); padding: 18px 0 22px; margin-bottom: 32px; }
+  h1 { font-size: 22px; line-height: 1.5; margin: 0 0 8px; }
+  .sub { font-size: 14px; color: var(--sub); margin: 0; }
+  h2 {
+    font-size: 18px; line-height: 1.5; margin: 40px 0 14px;
+    padding-left: 12px; border-left: 4px solid var(--orange);
+  }
+  p { margin: 0 0 1.4em; }
+  ul { margin: 0 0 1.4em; padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  strong { background: linear-gradient(transparent 64%, #ffe9a8 64%); font-weight: 700; }
+  .box {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 18px 20px 4px; margin: 0 0 1.4em;
+  }
+  .table-scroll { overflow-x: auto; margin-bottom: 1.4em; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 14px; background: var(--card); }
+  th, td { border: 1px solid var(--line); padding: 9px 10px; text-align: left; vertical-align: top; }
+  thead th { background: #f1eee8; font-size: 13px; white-space: nowrap; }
+  footer { margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--sub); }
+  @media (min-width: 768px) { h1 { font-size: 26px; } h2 { font-size: 20px; } .wrap { padding-top: 48px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../">← 制作サンプル一覧へ</a>
+
+  <header>
+    <h1>記事コンテンツ型LP サンプル<br>制作意図と設計方針</h1>
+    <p class="sub">坂上／2026年8月</p>
+  </header>
+
+  <p>
+    PPC広告からの流入を想定した記事コンテンツ型LPのサンプルです。ワイヤーフレームの作成からデザイン、HTML / CSS でのコーディングまで通しで制作しました。
+    ここでは「なぜこの作りにしたか」を記載します。
+  </p>
+
+  <h2>1.「広告」ではなく「記事」に見えることを最優先にした</h2>
+  <p>
+    記事コンテンツ型LPは、読者に「読み物」として受け取ってもらえた瞬間に機能します。そのため次の判断をしました。
+  </p>
+  <ul>
+    <li><strong>ヘッダーにナビゲーションを置かない</strong>／メニューは離脱の入口になるため、ロゴとカテゴリ表示だけに絞る</li>
+    <li><strong>本文の横幅を最大640〜720pxに固定</strong>／1行が長いと読了率が落ちる。記事LPは横に広げないほうが強い</li>
+    <li>本文16〜17px・行間1.9／スマートフォンで長文を読み切ってもらうための最低ライン</li>
+    <li>見出し・図解・吹き出しでリズムをつくる／文字の壁が続くと途中で離脱される</li>
+  </ul>
+
+  <h2>2. PR表記をファーストビュー内に置いた</h2>
+  <p>
+    2023年10月施行のステルスマーケティング規制（景品表示法）により、広告であることの明示が必要です。
+    記事型LPは体裁が記事に寄るぶん配慮が要るため、<strong>スクロールしなくても見える位置</strong>に「PR｜この記事にはプロモーションが含まれます」を配置しました。ここを下部に隠す作りにはしていません。
+  </p>
+
+  <h2>3. CTAを4か所に分散した</h2>
+  <p>
+    記事LPは縦に長く、読者が離脱するタイミングがばらけます。1か所にまとめると取りこぼすため、読者の温度ごとに置き分けました。
+  </p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>位置</th><th>想定する読者</th><th>文言</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>解決策の直後</td><td>もう決めている層</td><td>ウィークミールを見てみる</td></tr>
+        <tr><td>料金の直後</td><td>比較検討を終えた層</td><td>お試しセットの詳細を見る</td></tr>
+        <tr><td>まとめの直後</td><td>最後まで読んだ層</td><td>初回半額でお試ししてみる</td></tr>
+        <tr><td>追従バー（SPのみ）</td><td>どの位置からでも</td><td>初回半額でお試しする</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>同じ文言を4回繰り返すと広告色が強く出るため、すべて変えています。</p>
+
+  <h2>4. 数字を「図」にした</h2>
+  <p>
+    「平均72分」と書くだけでは自分ごとになりません。内訳をバーグラフにして、<strong>火を使っている時間は2割しかない</strong>ことを目で分からせてから本題に入る構成にしました。
+    比較表も同様で、自社列だけ背景色を変えて視線を止めています。
+  </p>
+
+  <h2>5. スマートフォンから設計した</h2>
+  <p>
+    360〜430px幅で組み、<code>min-width</code> でタブレット・PCへ広げています。PCで先に作ってから縮めると、スマートフォンで文字組みが破綻します。
+  </p>
+  <div class="box">
+    <ul>
+      <li>追従CTAはスマートフォンのみ表示（PCでは画面を覆う必要がないため非表示）</li>
+      <li>比較表は表の内側を横スクロールさせ、<strong>ページ全体は横に動かさない</strong></li>
+      <li>「表は横にスクロールできます」の案内をスマートフォンのみ表示</li>
+      <li>タップ領域はボタン高さ54〜68pxを確保</li>
+    </ul>
+  </div>
+
+  <h2>6. 表示速度のために外部読み込みをゼロにした</h2>
+  <p>
+    PPC流入は表示速度がそのまま費用対効果に効きます。そのため次のようにしました。
+  </p>
+  <ul>
+    <li>画像・アイコンは<strong>すべてインラインSVG</strong>。画像リクエスト0件</li>
+    <li>Webフォント不使用（端末標準フォントで組む）</li>
+    <li><strong>JavaScript不使用</strong>。FAQは <code>&lt;details&gt;</code>、目次はアンカーリンク、追従CTAは <code>position: fixed</code> で実装</li>
+  </ul>
+  <p>外部ファイルはCSS1本のみです。</p>
+
+  <h2>7. 細かい配慮</h2>
+  <ul>
+    <li><code>prefers-reduced-motion</code> に対応（動きを減らす設定の端末ではアニメーションを止める）</li>
+    <li>キーボード操作時のフォーカス表示を確保</li>
+    <li>iPhoneのホームバーに追従CTAが隠れないよう <code>env(safe-area-inset-bottom)</code> で調整</li>
+    <li>打ち消し価格と実売価格を同じ視野内・近接に配置（二重価格表示への配慮）</li>
+  </ul>
+
+  <h2>本番の案件での進め方</h2>
+  <ol>
+    <li>ワイヤー・原稿・素材を受領し、<strong>着手前にセクション構成と想定工数を一覧でご確認いただく</strong></li>
+    <li>デザインを提出 → ご確認</li>
+    <li>コーディング → 指定環境へ反映</li>
+    <li>表示確認（主要ブラウザ／スマートフォン実機相当）→ 修正対応</li>
+  </ol>
+  <p>
+    本サンプルは自作のワイヤーから起こしていますが、実案件では支給ワイヤーの意図を崩さないことを最優先にします。
+    デザイン面で気づいた点（可読性・離脱しやすい箇所・CTA前の導線など）は、勝手に変えずご提案の形でお伝えします。
+  </p>
+
+  <footer>
+    本ページで扱っているのはポートフォリオ用に制作したサンプルです。サービス名・企業名・価格・調査結果・利用者の声はすべて架空のものであり、実在のものとは一切関係ありません。
+  </footer>
+
+</div>
+</body>
+</html>

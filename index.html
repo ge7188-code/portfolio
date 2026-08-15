@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>制作サンプル｜坂上</title>
+<style>
+  :root {
+    --ink: #23211f;
+    --sub: #6b6660;
+    --line: #e4e0d8;
+    --bg: #faf8f4;
+    --card: #ffffff;
+    --accent: #3f7d5a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 34px; }
+  h1 { font-size: 22px; margin: 0 0 6px; letter-spacing: 0.04em; }
+  .sub { font-size: 14px; color: var(--sub); margin: 0; }
+  h2 { font-size: 15px; letter-spacing: 0.1em; color: var(--sub); font-weight: 700; margin: 0 0 16px; }
+  .work {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px 22px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .work:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .work__tag {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    color: var(--accent); background: #eef5f0; border-radius: 3px; padding: 2px 9px; margin-bottom: 10px;
+  }
+  .work__title { font-size: 18px; font-weight: 700; margin: 0 0 8px; line-height: 1.5; }
+  .work__desc { font-size: 14px; color: var(--sub); margin: 0 0 14px; }
+  .work__meta { font-size: 12px; color: var(--sub); border-top: 1px dashed var(--line); padding-top: 12px; margin: 0; }
+  .links { margin: 14px 0 0; font-size: 13px; }
+  .links a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--sub); }
+  @media (min-width: 768px) { h1 { font-size: 26px; } .wrap { padding-top: 64px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>制作サンプル</h1>
+    <p class="sub">坂上／ライティング・LP制作・Webコーディング</p>
+  </header>
+
+  <h2>WORKS</h2>
+
+  <a class="work" href="article-lp/">
+    <span class="work__tag">記事コンテンツ型LP</span>
+    <p class="work__title">平日の夕食づくりが「30分」で終わる家の共通点</p>
+    <p class="work__desc">PPC広告からの流入を想定した記事コンテンツ型LP。ワイヤーフレームの作成からデザイン、HTML / CSS でのコーディングまで通しで制作しました。</p>
+    <p class="work__meta">スマートフォン基準のレスポンシブ対応／JavaScript不使用／外部読み込みはCSS1本のみ／2026年8月</p>
+  </a>
+
+  <p class="links">
+    ・<a href="article-lp/about.html">この制作物の意図・設計方針はこちら</a>
+  </p>
+
+  <footer>
+    掲載しているのはポートフォリオ用に制作したサンプルです。登場するサービス名・企業名・価格・調査結果・利用者の声はすべて架空のものであり、実在のものとは一切関係ありません。
+  </footer>
+
+</div>
+</body>
+</html>
