@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>制作意図・設計方針｜外壁塗装のポスティングチラシ</title>
+<style>
+  :root {
+    --ink: #23211f; --sub: #6b6660; --line: #e4e0d8;
+    --bg: #faf8f4; --card: #ffffff; --accent: #3f7d5a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    line-height: 1.9; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  .back { font-size: 13px; color: var(--sub); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin: 20px 0 32px; }
+  h1 { font-size: 21px; margin: 0 0 8px; line-height: 1.5; }
+  .sub { font-size: 14px; color: var(--sub); margin: 0; }
+  h2 {
+    font-size: 16px; margin: 36px 0 12px; padding-left: 11px;
+    border-left: 4px solid var(--accent); line-height: 1.5;
+  }
+  h3 { font-size: 14.5px; margin: 22px 0 6px; }
+  p, li { font-size: 14.5px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  .quote {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin: 0 0 16px; font-size: 14px;
+  }
+  .quote strong { color: var(--accent); }
+  .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 16px; }
+  .ba div { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; font-size: 13.5px; }
+  .ba .h { font-weight: 700; font-size: 12px; letter-spacing: .06em; color: var(--sub); margin-bottom: 6px; }
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--sub); }
+  .links { margin: 26px 0 0; font-size: 13.5px; }
+  .links a { color: var(--accent); }
+  @media (max-width: 560px) { .ba { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="./">← チラシ本体へ</a>
+
+  <header>
+    <h1>制作意図・設計方針</h1>
+    <p class="sub">外壁塗装会社のポスティングチラシ（A4片面・架空案件）</p>
+  </header>
+
+  <h2>1. どこがむずかしい紙面か</h2>
+  <p>
+    ポスティングチラシは、郵便受けから取り出されて数秒で捨てられるか残るかが決まります。
+    そのなかで一番むずかしいのは「目に止まる」ことではなく、その次の
+    <strong>「これは自分に関係がある話だ」と思ってもらう</strong>ところだと考えました。
+  </p>
+  <p>
+    外壁塗装は「そのうちやらないといけない」とは分かっていても、
+    <strong>今の自分の家がどの段階にあるのかを判断できない</strong>商材です。
+    だから「無料診断します」と言われても動けません。判断材料がないからです。
+  </p>
+
+  <h2>2. 見出しを「説明」ではなく「その場でできる行動」にした</h2>
+  <div class="quote">
+    <strong>壁を手でさわると、白い粉がつきませんか。</strong>
+  </div>
+  <p>
+    チョーキング（塗膜の劣化）は、指で外壁をなぞるだけで誰でも判定できます。
+    専門知識も道具もいりません。だから、この見出しは読んだ人に<strong>1秒でできる行動</strong>を渡せます。
+  </p>
+  <p>
+    チラシを持ったまま壁に触れた瞬間、外壁塗装は他人事から自分の家の話に変わります。
+    「そろそろかもしれない」と思ってもらうまでの距離を、これ以上短くする方法が思いつきませんでした。
+  </p>
+
+  <h2>3. 症状チェックリストで、判断を読者に渡す</h2>
+  <p>
+    見出しに続けて、6つの症状をチェックボックス付きで並べました。
+    白い粉／ひび割れ／コケ・カビ／目地の切れ／塗装のはがれ／屋根の色あせ。
+    それぞれに<strong>症状を描いた図</strong>を添えています。
+  </p>
+  <p>
+    写真ではなく図にしたのには2つ理由があります。ひとつは、写真だと「その家の事情」が写り込んでしまい、
+    症状の特徴だけを取り出せないこと。もうひとつは、劣化した壁の写真を6枚並べると
+    <strong>紙面全体が汚れた印象になる</strong>ことです。図なら、症状は正確に、紙面は明るく保てます。
+  </p>
+
+  <h2>4. 不安をあおらない書き方にした</h2>
+  <p>
+    この構成は、書き方を誤ると訪問販売の「このままでは大変なことになります」と同じ紙面になります。
+    住宅リフォームは訪問販売への警戒感が強い領域なので、そこに寄った瞬間に信用を失います。
+  </p>
+  <ul>
+    <li>「危険」「手遅れ」「今すぐ」といった煽り言葉は<strong>一語も使っていません</strong></li>
+    <li>症状の説明は、起きている事実（塗膜が劣化している／雨水の入口になる）だけに留めています</li>
+    <li>受けの一文も「診断を受けてください」ではなく「<strong>確認する時期です</strong>」にしました</li>
+    <li>「その場で契約をお願いすることはありません」を、判定バーの中に明記しました</li>
+  </ul>
+
+  <h2>5. 価格は載せる。ただし主役にしない</h2>
+  <div class="ba">
+    <div>
+      <div class="h">よくある構成</div>
+      巨大な価格と「今だけ」を最上部に置く。目には入るが、<strong>「安さで選ぶ会社」</strong>に見え、
+      比較されるのは金額だけになる。
+    </div>
+    <div>
+      <div class="h">この紙面</div>
+      判断材料（症状・工程・保証）を上に、価格は下部に小さく。
+      費用は読者の最大の関心事なので<strong>消さない</strong>が、紙面の序列としては下げる。
+    </div>
+  </div>
+
+  <h2>6. 40〜70代が読む紙面としての設計</h2>
+  <ul>
+    <li><strong>本文は約8.4pt以上</strong>。可読性の下限を先に数値で決めてから、レイアウトを組みました</li>
+    <li>本文の書体は <strong>BIZ UDPGothic</strong>。文字の判別しやすさを目的に設計された UD書体（ユニバーサルデザイン書体）です</li>
+    <li>見出しは Zen Kaku Gothic New Black。本文と書体を変えることで、紙面に階層が生まれます</li>
+    <li>色数はブランドカラー3色に絞り、<strong>「面」ではなく「線・小さなラベル・アイコン」</strong>に使っています。
+        色数×面積が増えると、同じ「カラフル」でも安売り感が出るためです</li>
+  </ul>
+
+  <h2>7. 制作方法と、品質の担保</h2>
+  <p>
+    紙面は HTML / CSS で <strong>mm 単位</strong>で組み、ヘッドレスブラウザから 300dpi で出力しています。
+    デザインツールで作るのに比べ、級数・余白・行間を数値で固定でき、修正が差分で効くのが利点です。
+  </p>
+  <h3>はみ出しは、目視では見つからない</h3>
+  <p>
+    レンダリングした画像は紙のサイズで切れるため、<strong>紙をはみ出した要素は絵として見えません。</strong>
+    そこで、紙面の高さ制限を外して再レンダリングし、コンテンツの最終行が何ミリの位置で終わるかを
+    <strong>実測するスクリプト</strong>を用意しました。この紙面は下マージン8mm以内（288.1mm / A4は297mm）に
+    収まっていることを実測で確認しています。
+  </p>
+  <h3>書体のライセンス</h3>
+  <p>
+    使用書体はいずれも SIL Open Font License 1.1 です。印刷・商用利用・データへの埋め込みが可能なため、
+    <strong>納品後にクライアント側で文字を差し替える際、ライセンス上の制約になりません。</strong>
+  </p>
+
+  <h2>8. 納品を想定した形</h2>
+  <ul>
+    <li>印刷入稿用：A4・300dpi・塗り足し付きのデータ</li>
+    <li>編集用：文章・写真・掲載項目を差し替えられる形のデータ</li>
+    <li>表面のみのサンプルですが、同じ設計ルールで裏面（施工事例・料金・施工の流れ・会社情報）まで展開できます</li>
+  </ul>
+
+  <p class="links">・<a href="./">チラシ本体を見る</a>　・<a href="../">制作サンプル一覧へ</a></p>
+
+  <footer>
+    本ページで紹介しているのはポートフォリオ用に制作したサンプルです。
+    登場する社名・電話番号・住所・価格・実績・保証内容はすべて架空のものであり、実在の企業・団体とは一切関係ありません。
+  </footer>
+
+</div>
+</body>
+</html>

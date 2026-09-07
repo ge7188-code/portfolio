@@ -39,6 +39,7 @@
     transition: border-color 0.15s ease, transform 0.15s ease;
   }
   .work:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .work + .work, .work + p + .work { margin-top: 16px; }
   .work__tag {
     display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
     color: var(--accent); background: #eef5f0; border-radius: 3px; padding: 2px 9px; margin-bottom: 10px;
@@ -62,6 +63,13 @@
 
   <h2>WORKS</h2>
 
+  <a class="work" href="flyer/">
+    <span class="work__tag">ポスティングチラシ / A4</span>
+    <p class="work__title">壁を手でさわると、白い粉がつきませんか。</p>
+    <p class="work__desc">外壁塗装会社のポスティングチラシ。「自分に関係がある」と思ってもらう一点に絞り、見出しを説明ではなく“その場でできる行動”にしました。構成・コピー・レイアウト・図版まで通しで制作しています。</p>
+    <p class="work__meta">A4片面 / 300dpi・写真不使用（図版はすべて描き起こし）・本文8.4pt以上のUD書体・はみ出しは実測検査／2026年9月</p>
+  </a>
+
   <a class="work" href="article-lp/">
     <span class="work__tag">記事コンテンツ型LP</span>
     <p class="work__title">平日の夕食づくりが「30分」で終わる家の共通点</p>
@@ -70,7 +78,8 @@
   </a>
 
   <p class="links">
-    ・<a href="article-lp/about.html">この制作物の意図・設計方針はこちら</a>
+    ・<a href="flyer/about.html">チラシの意図・設計方針はこちら</a><br>
+    ・<a href="article-lp/about.html">記事型LPの意図・設計方針はこちら</a>
   </p>
 
   <footer>
